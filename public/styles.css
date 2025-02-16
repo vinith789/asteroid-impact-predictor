@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+h1 {
+  color: #333;
+}
+button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+.asteroid-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.3s;
+}
+.asteroid-card:hover {
+  transform: scale(1.05);
+}
+.asteroid-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+.asteroid-card p {
+  margin: 5px 0;
+  color: #666;
+}
+.asteroid-card .dangerous {
+  color: red;
+  font-weight: bold;
+}
+.asteroid-card .safe {
+  color: green;
+  font-weight: bold;
+}
+.asteroid-card a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(0, 163, 0);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.asteroid-card a:hover {
+  background-color: #07dd00;
+}
